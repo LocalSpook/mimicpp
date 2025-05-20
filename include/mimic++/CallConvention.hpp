@@ -56,14 +56,14 @@ namespace mimicpp
  * \brief Generates the desired ``remove_call_convention`` trait-specialization.
  * \ingroup CALL_CONVENTIONS_DETAIL
  * \param call_convention The convention to be removed.
- * \param specs All other function specifications (e.g. ``const`` and ``noexcept``).
+ * \param specs All other function specifications (``const``, ``&``, or ``&&``).
  * \attention Must be used from within the desired namespace.
  */
-#define MIMICPP_DETAIL_DEFINE_REMOVE_CALL_CONVENTION(call_convention, specs) \
-    template <typename Return, typename... Params>                           \
-    struct remove_call_convention<Return call_convention(Params...) specs>   \
-    {                                                                        \
-        using type = Return(Params...) specs;                                \
+#define MIMICPP_DETAIL_DEFINE_REMOVE_CALL_CONVENTION(call_convention, specs)                    \
+    template <typename Return, typename... Params, bool IsNoexcept>                             \
+    struct remove_call_convention<Return call_convention(Params...) specs noexcept(IsNoexcept)> \
+    {                                                                                           \
+        using type = Return(Params...) specs noexcept(IsNoexcept);                              \
     }
 
 /**
@@ -73,11 +73,11 @@ namespace mimicpp
  * \param specs All other function specifications (e.g. ``const`` and ``noexcept``).
  * \attention Must be used from within the desired namespace.
  */
-#define MIMICPP_DETAIL_DEFINE_ADD_CALL_CONVENTION(call_convention, specs) \
-    template <typename Return, typename... Params>                        \
-    struct add_call_convention<Return(Params...) specs>                   \
-    {                                                                     \
-        using type = Return call_convention(Params...) specs;             \
+#define MIMICPP_DETAIL_DEFINE_ADD_CALL_CONVENTION(call_convention, specs)          \
+    template <typename Return, typename... Params, bool IsNoexcept>                \
+    struct add_call_convention<Return(Params...) specs noexcept(IsNoexcept)>       \
+    {                                                                              \
+        using type = Return call_convention(Params...) specs noexcept(IsNoexcept); \
     }
 
 /**
@@ -86,23 +86,23 @@ namespace mimicpp
  * \param call_convention The used call-convention.
  * \param specs All other function specifications (e.g. ``const`` and ``noexcept``).
  */
-#define MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_CALL_INTERFACE(call_convention, specs)   \
-    template <typename Derived, typename Return, typename... Params>                   \
-    class CallInterface<                                                               \
-        Derived,                                                                       \
-        Return call_convention(Params...) specs>                                       \
-    {                                                                                  \
-    public:                                                                            \
-        constexpr Return call_convention operator()(                                   \
-            Params... params,                                                          \
-            ::std::source_location from = ::std::source_location::current()) specs     \
-        {                                                                              \
-            return static_cast<Derived const&>(*this)                                  \
-                .handle_call(                                                          \
-                    ::mimicpp::reporting::TypeReport::make<Return(Params...) specs>(), \
-                    ::std::tuple{::std::ref(params)...},                               \
-                    ::std::move(from));                                                \
-        }                                                                              \
+#define MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_CALL_INTERFACE(call_convention, specs)                        \
+    template <typename Derived, typename Return, typename... Params, bool IsNoexcept>                       \
+    class CallInterface<                                                                                    \
+        Derived,                                                                                            \
+        Return call_convention(Params...) specs noexcept(IsNoexcept)>                                       \
+    {                                                                                                       \
+    public:                                                                                                 \
+        constexpr Return call_convention operator()(                                                        \
+            Params... params,                                                                               \
+            ::std::source_location from = ::std::source_location::current()) specs noexcept(IsNoexcept)     \
+        {                                                                                                   \
+            return static_cast<Derived const&>(*this)                                                       \
+                .handle_call(                                                                               \
+                    ::mimicpp::reporting::TypeReport::make<Return(Params...) specs noexcept(IsNoexcept)>(), \
+                    ::std::tuple{::std::ref(params)...},                                                    \
+                    ::std::move(from));                                                                     \
+        }                                                                                                   \
     }
 
 /**
@@ -158,17 +158,11 @@ namespace mimicpp
         class CallInterface;                                                                               \
                                                                                                            \
         MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, );                          \
-        MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, noexcept);                  \
         MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, const);                     \
-        MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, const noexcept);            \
         MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, &);                         \
-        MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, & noexcept);                \
         MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, const&);                    \
-        MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, const& noexcept);           \
         MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, &&);                        \
-        MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, && noexcept);               \
         MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, const&&);                   \
-        MIMICPP_DETAIL_DEFINE_CALL_CONVENTION_SPECIALIZATIONS(call_convention, const&& noexcept);          \
     }                                                                                                      \
                                                                                                            \
     template <::namespace_name::has_call_convention Signature>                                             \
