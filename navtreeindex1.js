@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"d2/d91/classmimicpp_1_1reporting_1_1_expectation_report.html#ad0b948b2d97adf49989acd9783bf72b5":[1,6,0,4,5],
-"d2/d91/classmimicpp_1_1reporting_1_1_expectation_report.html#ad59f96434c23acb5d1e9e55b0e261c88":[1,6,0,4,1],
 "d2/dad/structmimicpp_1_1is__character_3_01char_01_4.html":[1,8,0,1],
 "d2/dad/structmimicpp_1_1is__character_3_01char_01_4.html":[1,9,1,1],
 "d2/dc9/group___c_a_l_l___c_o_n_v_e_n_t_i_o_n_s.html":[1,3,0],
@@ -27,6 +25,8 @@ var NAVTREEINDEX1 =
 "d2/de3/structmimicpp_1_1printing_1_1type_1_1lexing_1_1space.html#a62e10ab84691129f98b5b5a716446b04":[4,0,0,3,0,0,5,0],
 "d2/dfd/_argument_list_8hpp.html":[5,0,1,3,1],
 "d2/dfd/_argument_list_8hpp_source.html":[5,0,1,3,1],
+"d3/d03/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6noexcept_07_is_noexcept_08_4.html":[1,9,15,7],
+"d3/d03/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6noexcept_07_is_noexcept_08_4.html#a8b73440b0029f554d34099d37b59f80e":[1,9,15,7,0],
 "d3/d04/_catch2_8hpp.html":[5,0,1,0,1],
 "d3/d04/_catch2_8hpp_source.html":[5,0,1,0,1],
 "d3/d15/_source_location_8hpp.html":[5,0,1,6,6],

@@ -148,10 +148,9 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept&gt;&gt;                        \</div>
-<div class="line">    <span class="keyword">struct </span>add_call_convention&lt;Return(Params...) specs noexcept(IsNoexcept)&gt;                   \</div>
-<div class="line">    {                                                                     \</div>
-<div class="line">        <span class="keyword">using </span>type = Return call_convention(Params...) specs noexcept(IsNoexcept);             \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept &gt;&gt; <span class="keyword">struct </span>add_call_convention&lt;Return(Params...) specs noexcept(IsNoexcept)&gt; \</div>
+<div class="line">    {                                                                                                                                          \</div>
+<div class="line">        <span class="keyword">using </span>type = Return call_convention(Params...) specs noexcept(IsNoexcept);                                                             \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Generates the desired <code>add_call_convention</code> trait-specialization. </p>
@@ -184,22 +183,22 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept&gt;                   \</div>
-<div class="line">    <span class="keyword">class </span>CallInterface&lt;                                                               \</div>
-<div class="line">        Derived,                                                                       \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept&gt;                       \</div>
+<div class="line">    <span class="keyword">class </span>CallInterface&lt;                                                                                    \</div>
+<div class="line">        Derived,                                                                                            \</div>
 <div class="line">        Return call_convention(Params...) specs noexcept(IsNoexcept)&gt;                                       \</div>
-<div class="line">    {                                                                                  \</div>
-<div class="line">    <span class="keyword">public</span>:                                                                            \</div>
-<div class="line">        <span class="keyword">constexpr</span> Return call_convention operator()(                                   \</div>
-<div class="line">            Params... params,                                                          \</div>
+<div class="line">    {                                                                                                       \</div>
+<div class="line">    <span class="keyword">public</span>:                                                                                                 \</div>
+<div class="line">        <span class="keyword">constexpr</span> Return call_convention operator()(                                                        \</div>
+<div class="line">            Params... params,                                                                               \</div>
 <div class="line">            ::std::source_location from = ::std::source_location::current()) specs noexcept(IsNoexcept)     \</div>
-<div class="line">        {                                                                              \</div>
-<div class="line">            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived const&amp;<span class="keyword">&gt;</span>(*this)                                  \</div>
-<div class="line">                .handle_call(                                                          \</div>
+<div class="line">        {                                                                                                   \</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived const&amp;<span class="keyword">&gt;</span>(*this)                                                       \</div>
+<div class="line">                .handle_call(                                                                               \</div>
 <div class="line">                    <a class="code hl_function" href="../../de/d89/classmimicpp_1_1reporting_1_1_type_report.html#a62c1008b5079336358a44bb83f35b7af">::mimicpp::reporting::TypeReport::make</a>&lt;Return(Params...) specs <span class="keyword">noexcept</span>(IsNoexcept)&gt;(), \</div>
-<div class="line">                    ::std::tuple{::std::ref(params)...},                               \</div>
-<div class="line">                    ::std::move(from));                                                \</div>
-<div class="line">        }                                                                              \</div>
+<div class="line">                    ::std::tuple{::std::ref(params)...},                                                    \</div>
+<div class="line">                    ::std::move(from));                                                                     \</div>
+<div class="line">        }                                                                                                   \</div>
 <div class="line">    }</div>
 <div class="ttc" id="aclassmimicpp_1_1reporting_1_1_type_report_html_a62c1008b5079336358a44bb83f35b7af"><div class="ttname"><a href="../../de/d89/classmimicpp_1_1reporting_1_1_type_report.html#a62c1008b5079336358a44bb83f35b7af">mimicpp::reporting::TypeReport::make</a></div><div class="ttdeci">static constexpr TypeReport make() noexcept</div><div class="ttdef"><b>Definition</b> TypeReport.hpp:37</div></div>
 </div><!-- fragment -->
@@ -266,10 +265,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept&gt;          \</div>
-<div class="line">    <span class="keyword">struct </span>remove_call_convention&lt;Return call_convention(Params...) specs noexcept(IsNoexcept)&gt;   \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        <span class="keyword">using </span>type = Return(Params...) specs noexcept(IsNoexcept);                                \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept&gt;                             \</div>
+<div class="line">    <span class="keyword">struct </span>remove_call_convention&lt;Return call_convention(Params...) specs noexcept(IsNoexcept)&gt; \</div>
+<div class="line">    {                                                                                           \</div>
+<div class="line">        <span class="keyword">using </span>type = Return(Params...) specs noexcept(IsNoexcept);                              \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Generates the desired <code>remove_call_convention</code> trait-specialization. </p>

@@ -17,11 +17,11 @@ var group___t_y_p_e___t_r_a_i_t_s___s_i_g_n_a_t_u_r_e___r_e_m_o_v_e___r_e_f___q_
     [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) const noexcept(IsNoexcept)>", "dc/d06/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01con62e845ff9f17ceb062342ce4f77564ca.html", [
       [ "type", "dc/d06/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01con62e845ff9f17ceb062342ce4f77564ca.html#a3fd9fff8e3988640c1ad18fdd0f1f571", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...)&noexcept(IsNoexcept)>", "d0/d4d/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_6noexcept_07_is_noexcept_08_4.html", [
-      [ "type", "d0/d4d/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_6noexcept_07_is_noexcept_08_4.html#af4a332c8dd8b05080e6fbe2db8ca74e4", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) &noexcept(IsNoexcept)>", "d6/d19/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01_6noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "d6/d19/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01_6noexcept_07_is_noexcept_08_4.html#aa639e56a0ca840f668379d3bf9fcf888", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...)&noexcept(IsNoexcept)>", "d9/dd7/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_6noexcept_07_is_noexcept_08_4.html", [
-      [ "type", "d9/dd7/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_6noexcept_07_is_noexcept_08_4.html#a0267afed4fa203c2b52b3051bbc65d74", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) &noexcept(IsNoexcept)>", "d3/d03/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "d3/d03/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6noexcept_07_is_noexcept_08_4.html#a8b73440b0029f554d34099d37b59f80e", null ]
     ] ],
     [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) const &noexcept(IsNoexcept)>", "d6/d7c/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6noexcept_07_is_noexcept_08_4.html", [
       [ "type", "d6/d7c/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6noexcept_07_is_noexcept_08_4.html#ac1cee07a4ee1d313b804bb92692104ef", null ]

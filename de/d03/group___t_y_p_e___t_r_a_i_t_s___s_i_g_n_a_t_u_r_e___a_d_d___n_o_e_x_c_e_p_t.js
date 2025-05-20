@@ -13,11 +13,11 @@ var group___t_y_p_e___t_r_a_i_t_s___s_i_g_n_a_t_u_r_e___a_d_d___n_o_e_x_c_e_p_t 
     [ "mimicpp::signature_add_noexcept< Return(Params...,...) const noexcept(IsNoexcept)>", "d9/dd9/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01noexcept_07_is_noexcept_08_4.html", [
       [ "type", "d9/dd9/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01noexcept_07_is_noexcept_08_4.html#a99eec49dec25d319b87d3c0c0261c891", null ]
     ] ],
-    [ "mimicpp::signature_add_noexcept< Return(Params...)&noexcept(IsNoexcept)>", "de/d51/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_6noexcept_07_is_noexcept_08_4.html", [
-      [ "type", "de/d51/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_6noexcept_07_is_noexcept_08_4.html#ac174389e0c14eb959ff762cee47adc88", null ]
+    [ "mimicpp::signature_add_noexcept< Return(Params...) &noexcept(IsNoexcept)>", "db/d14/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_01_6noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "db/d14/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_01_6noexcept_07_is_noexcept_08_4.html#ac1309ea207885800383b14a58bfabd5f", null ]
     ] ],
-    [ "mimicpp::signature_add_noexcept< Return(Params...,...)&noexcept(IsNoexcept)>", "da/dc6/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_6noexcept_07_is_noexcept_08_4.html", [
-      [ "type", "da/dc6/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_6noexcept_07_is_noexcept_08_4.html#ab1ed0a65af37e572ddd232690e90ca03", null ]
+    [ "mimicpp::signature_add_noexcept< Return(Params...,...) &noexcept(IsNoexcept)>", "db/d77/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "db/d77/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6noexcept_07_is_noexcept_08_4.html#aee59450ebe14d8ba0bbee2e9adad91f1", null ]
     ] ],
     [ "mimicpp::signature_add_noexcept< Return(Params...) const &noexcept(IsNoexcept)>", "da/d0a/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_01const_01_6noexcept_07_is_noexcept_08_4.html", [
       [ "type", "da/d0a/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_01const_01_6noexcept_07_is_noexcept_08_4.html#ac1420f30fff08d5396cd8b0b4c23574e", null ]
