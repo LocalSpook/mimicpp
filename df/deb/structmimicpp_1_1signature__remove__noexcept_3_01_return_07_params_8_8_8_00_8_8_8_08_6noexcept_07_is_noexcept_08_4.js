@@ -1,0 +1,4 @@
+var structmimicpp_1_1signature__remove__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_6noexcept_07_is_noexcept_08_4 =
+[
+    [ "type", "df/deb/structmimicpp_1_1signature__remove__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_6noexcept_07_is_noexcept_08_4.html#aa3669671e051d8a054f8f27718c206e5", null ]
+];

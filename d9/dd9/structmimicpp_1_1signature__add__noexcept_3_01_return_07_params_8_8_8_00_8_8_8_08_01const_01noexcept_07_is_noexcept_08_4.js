@@ -1,0 +1,4 @@
+var structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01noexcept_07_is_noexcept_08_4 =
+[
+    [ "type", "d9/dd9/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01noexcept_07_is_noexcept_08_4.html#a99eec49dec25d319b87d3c0c0261c891", null ]
+];

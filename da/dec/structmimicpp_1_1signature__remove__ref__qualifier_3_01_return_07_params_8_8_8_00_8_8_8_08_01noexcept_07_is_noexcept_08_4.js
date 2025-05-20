@@ -1,0 +1,4 @@
+var structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01noexcept_07_is_noexcept_08_4 =
+[
+    [ "type", "da/dec/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01noexcept_07_is_noexcept_08_4.html#aa73a28923cb04323a321d0f25c0d7b5a", null ]
+];

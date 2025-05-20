@@ -148,10 +148,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params&gt;                        \</div>
-<div class="line">    <span class="keyword">struct </span>add_call_convention&lt;Return(Params...) specs&gt;                   \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept&gt;&gt;                        \</div>
+<div class="line">    <span class="keyword">struct </span>add_call_convention&lt;Return(Params...) specs noexcept(IsNoexcept)&gt;                   \</div>
 <div class="line">    {                                                                     \</div>
-<div class="line">        <span class="keyword">using </span>type = Return call_convention(Params...) specs;             \</div>
+<div class="line">        <span class="keyword">using </span>type = Return call_convention(Params...) specs noexcept(IsNoexcept);             \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Generates the desired <code>add_call_convention</code> trait-specialization. </p>
@@ -184,19 +184,19 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params&gt;                   \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept&gt;                   \</div>
 <div class="line">    <span class="keyword">class </span>CallInterface&lt;                                                               \</div>
 <div class="line">        Derived,                                                                       \</div>
-<div class="line">        Return call_convention(Params...) specs&gt;                                       \</div>
+<div class="line">        Return call_convention(Params...) specs noexcept(IsNoexcept)&gt;                                       \</div>
 <div class="line">    {                                                                                  \</div>
 <div class="line">    <span class="keyword">public</span>:                                                                            \</div>
 <div class="line">        <span class="keyword">constexpr</span> Return call_convention operator()(                                   \</div>
 <div class="line">            Params... params,                                                          \</div>
-<div class="line">            ::std::source_location from = ::std::source_location::current()) specs     \</div>
+<div class="line">            ::std::source_location from = ::std::source_location::current()) specs noexcept(IsNoexcept)     \</div>
 <div class="line">        {                                                                              \</div>
 <div class="line">            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived const&amp;<span class="keyword">&gt;</span>(*this)                                  \</div>
 <div class="line">                .handle_call(                                                          \</div>
-<div class="line">                    <a class="code hl_function" href="../../de/d89/classmimicpp_1_1reporting_1_1_type_report.html#a62c1008b5079336358a44bb83f35b7af">::mimicpp::reporting::TypeReport::make</a>&lt;Return(Params...) specs&gt;(), \</div>
+<div class="line">                    <a class="code hl_function" href="../../de/d89/classmimicpp_1_1reporting_1_1_type_report.html#a62c1008b5079336358a44bb83f35b7af">::mimicpp::reporting::TypeReport::make</a>&lt;Return(Params...) specs <span class="keyword">noexcept</span>(IsNoexcept)&gt;(), \</div>
 <div class="line">                    ::std::tuple{::std::ref(params)...},                               \</div>
 <div class="line">                    ::std::move(from));                                                \</div>
 <div class="line">        }                                                                              \</div>
@@ -266,17 +266,17 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params&gt;                           \</div>
-<div class="line">    <span class="keyword">struct </span>remove_call_convention&lt;Return call_convention(Params...) specs&gt;   \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept&gt;          \</div>
+<div class="line">    <span class="keyword">struct </span>remove_call_convention&lt;Return call_convention(Params...) specs noexcept(IsNoexcept)&gt;   \</div>
 <div class="line">    {                                                                        \</div>
-<div class="line">        <span class="keyword">using </span>type = Return(Params...) specs;                                \</div>
+<div class="line">        <span class="keyword">using </span>type = Return(Params...) specs noexcept(IsNoexcept);                                \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Generates the desired <code>remove_call_convention</code> trait-specialization. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">call_convention</td><td>The convention to be removed. </td></tr>
-    <tr><td class="paramname">specs</td><td>All other function specifications (e.g. <code>const</code> and <code>noexcept</code>). </td></tr>
+    <tr><td class="paramname">specs</td><td>All other function specifications (<code>const</code>, <code>&amp;</code>, or <code>&amp;&amp;</code>). </td></tr>
   </table>
   </dd>
 </dl>
@@ -289,7 +289,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 12 2025 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue May 20 2025 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -5,77 +5,41 @@ var group___t_y_p_e___t_r_a_i_t_s___s_i_g_n_a_t_u_r_e___r_e_m_o_v_e___r_e_f___q_
       [ "call_convention_traits_t", "d1/d98/structmimicpp_1_1signature__remove__ref__qualifier_3_01_signature_01_4.html#a5effbdf747cb536019f5cf54d6181dc8", null ],
       [ "type", "d1/d98/structmimicpp_1_1signature__remove__ref__qualifier_3_01_signature_01_4.html#a3ab2ede493ef8787693ef0b5122edb79", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...)>", "d3/d35/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_4.html", [
-      [ "type", "d3/d35/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_4.html#a1850b54e7694abf9de025956cdf4b397", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) noexcept(IsNoexcept)>", "db/d2c/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "db/d2c/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01noexcept_07_is_noexcept_08_4.html#a09df316acb96d229a2443e4398502138", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...)>", "d3/daa/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_4.html", [
-      [ "type", "d3/daa/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_4.html#a3310de9c4b564afb01113a80d6424478", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) noexcept(IsNoexcept)>", "da/dec/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "da/dec/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01noexcept_07_is_noexcept_08_4.html#aa73a28923cb04323a321d0f25c0d7b5a", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) noexcept >", "db/d5f/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01noexcept_01_4.html", [
-      [ "type", "db/d5f/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01noexcept_01_4.html#a341c1364ba7333537d38d031e1f8f56a", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) const noexcept(IsNoexcept)>", "df/d6f/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "df/d6f/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01noexcept_07_is_noexcept_08_4.html#a9f08fe14d6dab0f834f751b086697347", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) noexcept >", "da/d60/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01noexcept_01_4.html", [
-      [ "type", "da/d60/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01noexcept_01_4.html#a18a26278ff48dd4341e8f1a5edc64859", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) const noexcept(IsNoexcept)>", "dc/d06/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01con62e845ff9f17ceb062342ce4f77564ca.html", [
+      [ "type", "dc/d06/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01con62e845ff9f17ceb062342ce4f77564ca.html#a3fd9fff8e3988640c1ad18fdd0f1f571", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) const >", "d6/d02/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_4.html", [
-      [ "type", "d6/d02/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_4.html#aedf3b3c01fdb380548893164232497b9", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...)&noexcept(IsNoexcept)>", "d0/d4d/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_6noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "d0/d4d/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_6noexcept_07_is_noexcept_08_4.html#af4a332c8dd8b05080e6fbe2db8ca74e4", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) const >", "df/d36/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_4.html", [
-      [ "type", "df/d36/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_4.html#a59a7917f2a37a112d1499a7e8d5e1598", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...)&noexcept(IsNoexcept)>", "d9/dd7/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_6noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "d9/dd7/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_6noexcept_07_is_noexcept_08_4.html#a0267afed4fa203c2b52b3051bbc65d74", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) const noexcept >", "d4/dbe/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01noexcept_01_4.html", [
-      [ "type", "d4/dbe/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01noexcept_01_4.html#a9842fcb3c44d2cc5967e1b96c8b9de89", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) const &noexcept(IsNoexcept)>", "d6/d7c/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "d6/d7c/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6noexcept_07_is_noexcept_08_4.html#ac1cee07a4ee1d313b804bb92692104ef", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) const noexcept >", "df/d22/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01noexcept_01_4.html", [
-      [ "type", "df/d22/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01noexcept_01_4.html#a8b2c3f7914ff6025a382fe55bdd25554", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) const &noexcept(IsNoexcept)>", "de/d01/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01con7c46acabb1b608aee41ebe95a1076693.html", [
+      [ "type", "de/d01/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01con7c46acabb1b608aee41ebe95a1076693.html#a35f86443086a8fc6194c62e61c492bfa", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...)& >", "d3/db3/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_6_01_4.html", [
-      [ "type", "d3/db3/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_6_01_4.html#ab055e5cbbf35abc8f7ec15d50962ba67", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) &&noexcept(IsNoexcept)>", "dd/da3/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01_6_6noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "dd/da3/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01_6_6noexcept_07_is_noexcept_08_4.html#a608ee835e881e53b49122f40d7ced170", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...)& >", "d9/d10/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_6_01_4.html", [
-      [ "type", "d9/d10/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_6_01_4.html#a64c14de67887e4b092cc6898640ce721", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) &&noexcept(IsNoexcept)>", "da/d74/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6_6noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "da/d74/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6_6noexcept_07_is_noexcept_08_4.html#a0f2cd7f12e9aa88bf6d53a1f6c3a0e07", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) &noexcept >", "d7/d2f/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01_6noexcept_01_4.html", [
-      [ "type", "d7/d2f/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01_6noexcept_01_4.html#a1e867de04fc41f944daab8913ec69ee8", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) const &&noexcept(IsNoexcept)>", "d9/d05/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6_6noexcept_07_is_noexcept_08_4.html", [
+      [ "type", "d9/d05/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6_6noexcept_07_is_noexcept_08_4.html#a9f1a5ac5a941b6622a27a443a4fb8121", null ]
     ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) &noexcept >", "d4/d33/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6noexcept_01_4.html", [
-      [ "type", "d4/d33/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6noexcept_01_4.html#af1216d7d99c028e2c687ce5d91a6975f", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) const & >", "d3/db4/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6_01_4.html", [
-      [ "type", "d3/db4/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6_01_4.html#a96faa49bf9ae95ce8ff82ebc91828380", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) const & >", "d5/d9b/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_6_01_4.html", [
-      [ "type", "d5/d9b/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_6_01_4.html#ad5d33a35ded3ceebd366c51c455fe604", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) const &noexcept >", "da/d45/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6noexcept_01_4.html", [
-      [ "type", "da/d45/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6noexcept_01_4.html#a0b4f771b50e23a1f188a5b9ebd2eb154", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) const &noexcept >", "d4/d12/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_6noexcept_01_4.html", [
-      [ "type", "d4/d12/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_6noexcept_01_4.html#ae12cf9d045d0e8380eb75bbac2e00141", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) && >", "d4/d33/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01_6_6_01_4.html", [
-      [ "type", "d4/d33/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01_6_6_01_4.html#af96c0add131e796dff20d6a7ecf64437", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) && >", "df/d46/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6_6_01_4.html", [
-      [ "type", "df/d46/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6_6_01_4.html#a8733f53836e89a577052a26b10921100", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) &&noexcept >", "db/d5a/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01_6_6noexcept_01_4.html", [
-      [ "type", "db/d5a/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01_6_6noexcept_01_4.html#a399f7057d4ffc4edb24a0514084b06bc", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) &&noexcept >", "de/d9c/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6_6noexcept_01_4.html", [
-      [ "type", "de/d9c/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01_6_6noexcept_01_4.html#a2813a9ad8a3f6d7ac2326d0f3fcca96d", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) const && >", "d9/d7e/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6_6_01_4.html", [
-      [ "type", "d9/d7e/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6_6_01_4.html#aaaf329d493b0c6a8d0b4071a123651d1", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) const && >", "d7/d01/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_6_6_01_4.html", [
-      [ "type", "d7/d01/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_6_6_01_4.html#aa468b336e48394ef8f3688514b92417d", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...) const &&noexcept >", "de/d1f/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6_6noexcept_01_4.html", [
-      [ "type", "de/d1f/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_08_01const_01_6_6noexcept_01_4.html#ae8f0170c5dec38bf394bf066cc1e1b4a", null ]
-    ] ],
-    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) const &&noexcept >", "d1/dbe/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_6_6noexcept_01_4.html", [
-      [ "type", "d1/dbe/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_6_6noexcept_01_4.html#a252084f56446c57ca88f6576cd72a02f", null ]
+    [ "mimicpp::signature_remove_ref_qualifier< Return(Params...,...) const &&noexcept(IsNoexcept)>", "d7/d3c/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01cond6ac25826e6f55cdd739e9145d0715fc.html", [
+      [ "type", "d7/d3c/structmimicpp_1_1signature__remove__ref__qualifier_3_01_return_07_params_8_8_8_00_8_8_8_08_01cond6ac25826e6f55cdd739e9145d0715fc.html#a5dfa5fafb671c2bfca09553075564b81", null ]
     ] ],
     [ "mimicpp::signature_remove_ref_qualifier_t", "d6/ddd/group___t_y_p_e___t_r_a_i_t_s___s_i_g_n_a_t_u_r_e___r_e_m_o_v_e___r_e_f___q_u_a_l_i_f_i_e_r.html#ga834ae0643ab9cafd5b3b14116b86a4ca", null ]
 ];
