@@ -148,9 +148,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept &gt;&gt; <span class="keyword">struct </span>add_call_convention&lt;Return(Params...) specs noexcept(IsNoexcept)&gt; \</div>
-<div class="line">    {                                                                                                                                          \</div>
-<div class="line">        <span class="keyword">using </span>type = Return call_convention(Params...) specs noexcept(IsNoexcept);                                                             \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Return, <span class="keyword">typename</span>... Params, <span class="keywordtype">bool</span> IsNoexcept&gt;                \</div>
+<div class="line">    <span class="keyword">struct </span>add_call_convention&lt;Return(Params...) specs noexcept(IsNoexcept)&gt;       \</div>
+<div class="line">    {                                                                              \</div>
+<div class="line">        <span class="keyword">using </span>type = Return call_convention(Params...) specs noexcept(IsNoexcept); \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Generates the desired <code>add_call_convention</code> trait-specialization. </p>
